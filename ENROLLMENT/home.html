@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daycare Enrollment</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/logo.png" alt="University Logo" class="logo">
+            <nav>
+                <h1>DSWD</h1>
+                <h2>Enrollment for Daycare Center S.Y. 2024-2025 is on-going!</h2>              
+            </nav>           
+            <div class="icon-container">
+                <i class="fa fa-heart"></i>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#programs">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                </ul>
+            </nav>   
+        </header>
+
+        <main>    
+            <div class="enrollment-section">
+                <button id="registerBtn" class="register-btn" onclick="showModal('registerModal')">REGISTER</button>
+                <div class="application-steps">
+                    <h1>Application Steps</h1>
+                    <ol>      
+                        <li><strong>Step 1:</strong> Register or Log In
+                            For New Applicants: If you don't have an account, click on <span>REGISTER</span>  and provide your basic information to create an account.
+                            For Returning Applicants: Log in using your email, username, or mobile number and password.
+                        </li>
+                        <li><strong>Step 2:</strong> Access the Enrollment Section
+                            On the homepage, look for a button or section labeled <span>ENROLL NOW</span>. Click on it to begin the application process.
+                        </li>
+                        <li><strong>Step 3:</strong> Complete the Online Application Form:
+                            Fill out the online form with the following details:
+                            Personal Information (Name, Age, Birthdate, etc.), Parent/Guardian Information, Address and Contact Information, Other relevant details specific to the daycare's requirements.
+                        </li>
+                        <li><strong>Step 4:</strong> Schedule a Free Consultation (Optional)
+                            You may book a free consultation to understand the program better. Some centers offer demo sessions.
+                        </li>
+                        <li><strong>Step 5:</strong> Review and Confirm Your Application
+                            Carefully review all the information you have entered. Make any necessary changes before confirming.
+                        </li>
+                        <li><strong>Step 6:</strong> Await Further Instructions
+                            Check your email or account dashboard regularly for updates, including payment information, class start dates, and any additional steps.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        
+            <div class="login-section">
+                <h1>ONLINE ENROLLMENT SYSTEM</h1>
+                <form id="loginForm">
+                    <label for="username">Email, No., or Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <p>Applicant can only have 1 account access.</p>
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                    <a href="#" onclick="showModal('forgotPasswordModal')">Forgot Password</a>
+                    <h4>(Guardian or Applicants Only)</h4>
+                </form>
+            </div>
+        </main>
+
+        <div class="section"> 
+            <div class="content" id="programs"> <!-- Added ID for linking -->
+                <h2>Programs</h2>
+                <ul class="program-list">
+                    <li>
+                        <h5>Module 1: Early Childhood Development</h5>
+                        <ul>
+                            <li><strong>Week 1:</strong> Introduction to Early Childhood Development - Understanding the importance of early years.</li>
+                            <li><strong>Week 2:</strong> Physical Development - Activities to promote gross and fine motor skills.</li>
+                            <li><strong>Week 3:</strong> Cognitive Development - Engaging activities that stimulate thinking and problem-solving.</li>
+                            <li><strong>Week 4:</strong> Social and Emotional Development - Building relationships and emotional intelligence through play.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Module 2: Health and Nutrition</h5>
+                        <ul>
+                            <li><strong>Week 1:</strong> Importance of Nutrition - Understanding balanced diets for young children.</li>
+                            <li><strong>Week 2:</strong> Healthy Eating Habits - Fun ways to encourage healthy eating.</li>
+                            <li><strong>Week 3:</strong> Hygiene Practices - Teaching children the importance of personal hygiene.</li>
+                            <li><strong>Week 4:</strong> Physical Activity - Incorporating movement and exercise into daily routines.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Module 3: Creative Arts and Expression</h5>
+                        <ul>
+                            <li><strong>Week 1:</strong> Introduction to Art - Exploring different art materials and techniques.</li>
+                            <li><strong>Week 2:</strong> Music and Movement - Activities that combine music with physical expression.</li>
+                            <li><strong>Week 3:</strong> Storytelling and Drama - Encouraging imagination through stories and role-play.</li>
+                            <li><strong>Week 4:</strong> Cultural Arts - Exploring different cultures through art and crafts.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Module 4: Language and Literacy</h5>
+                        <ul>
+                            <li><strong>Week 1:</strong> Language Development - Activities to enhance vocabulary and communication skills.</li>
+                            <li><strong>Week 2:</strong> Early Literacy Skills - Introducing letters, sounds, and reading readiness.</li>
+                            <li><strong>Week 3:</strong> Storytime - The importance of reading and storytelling in early education.</li>
+                            <li><strong>Week 4:</strong> Writing Skills - Fun activities to develop pre-writing skills.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Module 5: Social Skills and Community Awareness</h5>
+                        <ul>
+                            <li><strong>Week 1:</strong> Understanding Emotions - Identifying and expressing feelings.</li>
+                            <li><strong>Week 2:</strong> Sharing and Cooperation - Activities that promote teamwork and sharing.</li>
+                            <li><strong>Week 3:</strong> Community Helpers - Learning about different roles in the community.</li>
+                            <li><strong>Week 4:</strong> Environmental Awareness - Teaching children about caring for the environment.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="content-section" id="features">
+                <h2 class="content-title">Features</h2>
+                <div class="container">  
+                    <h5 class="content-paragraph">Here are some of the features of our website:</h5>
+                    <ul class="feature-list">
+                        <li>Responsive design that works on all devices</li>
+                        <li>User-friendly interface</li>
+                        <li>Fast loading times</li>
+                        <li>Accessible content</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-section" id="about">
+                <div class="container">
+                    <h2 class="content-title">About Us</h2>
+                    <h4>Our Mission</h4>
+                    <p class="content-paragraph">
+                        Our mission is to deliver exceptional value to our customers through innovative solutions and outstanding service. We believe in building long-lasting relationships based on trust and integrity.
+                    </p>
+                    <h4>Our Vision</h4>
+                    <p class="content-paragraph">
+                        We envision a world where our services empower individuals and organizations to achieve their goals. We aim to be a leader in our industry, known for our commitment to quality and customer satisfaction.
+                    </p>
+                    <h4>Our Values</h4>
+                    <ul class="values-list">
+                        <li><span>Integrity:</span> We uphold the highest standards of integrity in all our actions.</li>
+                        <li><span>Innovation:</span> We embrace change and strive for continuous improvement.</li>
+                        <li><span>Customer Focus:</span> Our customers are at the heart of everything we do.</li>
+                        <li><span>Collaboration:</span> We work together to achieve common goals.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- Registration Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit"id="register">Register</button>
+        </form>
+    </div>
+</div>
+   
+
+
+<!-- Forgot Password Modal -->
+<div id="forgotPasswordModal"  class="modal" >
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('forgotPasswordModal')">&times;</span>
+            <div class="modal-body">
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <p>We will send you a link to reset your password.</p>
+                </form>
+            </div>        
+               <button type="button" id="sendResetLink">Send Reset Link</button>
+        </div>
+    </div>
+</div>
+<!-- Contact Form Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <div class="modal-body">
+                <form id="contactForm" method="POST" action="enrollment.php">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" name="contact">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li><a href="tel:+1234567890">Phone: +123 456 7890</a></li>
+                        <li><a href="mailto:info@daycarecenter.com">Email: info@daycarecenter.com</a></li>
+                        <li><a href="#" onclick="showModal('contactModal')">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <a class="text-custom-blue" href="https://www.facebook.com/yourfacebookpage"><i class="fab fa-facebook"></i></a>
+                        <a class="text-custom-blue" href="https://twitter.com/yourtwitterhandle"><i class="fab fa-twitter"></i></a>
+                        <a class="text-custom-blue" href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>          
+                    </ul>
+                </div>
+            <div class="footer-section">
+                <h4>Quick Location</h4>
+                  <iframe
+                  width="400"
+                  height="200"                  
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d109704.80791197321!2d121.95952571140249!3d6.906493741307989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.9337088!2d122.09356799999999!4m5!1s0x32506a00f2f1ae89%3A0xa3b9e5d3565b2904!2sdswd%20zamboanga%20city%20address!3m2!1d6.9035563!2d122.0803138!5e0!3m2!1sen!2sph!4v1728367876855!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>                   
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Daycare Center. All rights reserved.</p>
+            </div>
+        </footer>
+   
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="./js/home.js"></script>
+</body>
+</html>
